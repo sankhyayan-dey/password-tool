@@ -1,1 +1,1 @@
-# password-tool
+# Password-Tool - A browser-based password generator using Pyodide (no installation needed).
