@@ -4,10 +4,7 @@ A modern **browser-based password generator** built with **HTML, CSS, and JavaSc
 
 ---
 
-## 🌐 Live Demo
-
-[🔗 View Demo](https://sankhyayan-dey.github.io/password-tool)
-*Clean and responsive design for quick password generation.*
+> 💡 Live Preview: [Click to Open](https://sankhyayan-dey.github.io/password-tool)
 
 ---
 
