@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="static/images/logo.png">
+  <title>Password Tool</title>
+  
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+  <div class="container" role="main">
+    <h1> Password Strength Checker</h1>
+
+    <label for="pwInput">Enter password to check:</label>
+    <div class="row">
+      <div class="input-wrapper">
+        <input id="pwInput" type="password" placeholder="Type password here" aria-label="Password input">
+        <button id="togglePassword" aria-label="Show or hide password">👁️</button>
+      </div>
+      <button id="checkBtn">Check Strength</button>
+    </div>
+
+    <label for="genLen">Generate password (length):</label>
+    <div class="row">
+      <input id="genLen" type="number" min="6" max="64" value="12" aria-label="Password length">
+      <button id="genBtn">Generate</button>
+      <button id="useGen">Use Generated</button>
+      
+      <div class="copy-container">
+        <button id="copyBtn">Copy</button>
+        <span id="copy-tooltip">Copied! ✅</span>
+      </div>
+    </div>
+
+    <div id="output" class="output" aria-live="polite">(waiting for input…)</div>
+    <div class="note">All runs locally in your browser via Python (Pyodide). <br> Do not paste real production passwords! Use test passwords only.</div>
+
+    <footer>
+      © 2025 Sankhyayan Dey | Built with Pyodide 🤍
+    </footer>
+    </div>
+
+  <script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
+  <script src="static/js/script.js"></script>
+</body>
+</html>
